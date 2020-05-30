@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@200&display=swap');
+
+*{
+	margin:0; padding: 0;
+	box-sizing: border-box;
+}
+
+li {
+	list-style: none;
+}
+
+.home{
+	background: url("images/shoe-background.jpg") center/cover no-repeat;
+	width: 100%;
+	height:100vh;
+	min-height: 650px;
+	position: relative;
+	font-family: 'Poppins', sans-serif;
+	color: white;
+}
+
+
+/*start header style*/
+
+.home header {
+	width: 80vw;
+	height: 50px;
+	background: (0,0,0,.5);
+	display: flex;
+	justify-content: space-between;
+	/*margin: 0 auto;*/
+	padding-top: 30px;
+	letter-spacing: 1.5px;
+	position: absolute;
+	left: 10%;
+}
+
+.brand {
+	/*border: 1px solid;*/
+	text-align: center;
+	height: 40px;
+}
+
+.brand h3 {
+	line-height: 2;
+}
+
+.home header ul {
+	display: flex;
+	font-weight: bold;
+}
+
+header ul li {
+	padding: 20px;
+	cursor: pointer;
+}
+
+li:after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #fff;
+    /*display: hidden;*/
+	display: block;
+    transition: .3s;
+}
+
+li:hover:after {
+	width: 100%;
+}
+
+/*end header style */
+
+
+/* start product style */
+
+.home .product {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 150px;
+}
+
+.home .product .details{
+	width: 40vw;
+	height: 400px;
+	/*border: 1px solid;*/
+	letter-spacing: 5px;
+	margin-top: 50px;
+}
+
+.details h3 {
+	font-size: 48px;
+	font-family: 'Bangers', cursive;
+}
+
+.details h1 {
+	font-size: 64px;
+	font-family: 'Bangers', cursive;
+}
+
+.details p {
+	font-size: 20px;
+	letter-spacing: 2px;
+	font-family: 'Poppins', sans-serif;
+}
+
+.details button {
+	border: none;
+	outline: none;
+	width: 200px;
+	height: 50px;
+	background: #fff;
+	font-size: 22px;
+	color:#53A3EC;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	margin-top: 30px;
+	border-radius: 6px;
+	transition: .3s;
+	cursor: pointer;
+}
+
+.details button:hover {
+	background:#53A3EC;
+	color:#fff;
+	box-shadow: 0px 0px 16px 1px rgba(47,128,204,1); 
+}
+
+.home .product .product-img {
+	/*background: blue;*/
+	width: 40vw;
+	height: 400px;
+	position: relative;
+}
+
+.product-img img {
+	width:100%; height: 100%;
+	object-fit: cover;
+}
+
+/* end product style */
+
+/* start our products */
+
+.our-products {
+	width: 100%;
+	height:100vh;
+	min-height: 650px;
+	font-family: 'Poppins', sans-serif;
+	background: url("images/noise.png");
+}
+
+.our-products h1{
+	text-align: center;
+	color: #333;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	font-size: 48px;
+	font-weight:lighter;
+}
+
+.our-products .products {
+	width: 100%;
+	text-align: center;
+	position: relative;
+}
+
+
+.our-products .products > div {
+	margin: 20px;
+	background: #F6F6F6 url("images/noise.png");
+	display: inline-block;
+	width: 300px; height: auto;
+	padding-bottom: 10px;
+	position: relative;
+	transition: .3s;
+	top:0;
+}
+
+.our-products .products > div:hover {
+	box-shadow: 0 0 15px 10px #d6d6d6;
+	top: -20px;
+}
+
+.products .product img {
+	width: 100%; height: 170px;
+	object-fit: cover;
+	margin-bottom: 60px;
+	transition: .3s;
+}
+
+.product .title {
+	margin-bottom: 50px;
+	font-size: 24px;
+	color: #666;
+    font-family: monospace;
+    font-weight: lighter;
+}
+
+.product .price {
+	font-size: 18px;	
+}
+
+.product .price > div {
+	display: inline-block;
+	margin: 20px;
+}
+.product .price .old {
+	text-decoration-line: line-through;
+}
+
+.product .icon {
+	font-size: 18px;
+    width: 70%;
+    background: #53a3ec;
+    margin: 0 auto;
+    border: none;
+    border-radius: 6px;
+    padding: 5px;
+    outline: none;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.product .icon:hover {
+    box-shadow: 0px 0px 10px 1px #53a3ec;
+}
+
+.icon span {
+	margin-left: 20px;
+}
+
+/* end our products */
+
+
+footer {
+	background: #333;
+	color: #fff;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 10px;
+}
+
+footer > * {
+	margin: 5px;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+	text-decoration-line: underline;
+}
