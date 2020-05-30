@@ -190,6 +190,7 @@ button a {
 	position: relative;
 	transition: .3s;
 	top:0;
+	border-radius: 5px;
 }
 
 .our-products .products > div:hover {
@@ -202,6 +203,8 @@ button a {
 	object-fit: cover;
 	margin-bottom: 60px;
 	transition: .3s;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
 }
 
 .product .title {
