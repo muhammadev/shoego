@@ -159,7 +159,7 @@ button a {
 
 .our-products {
 	width: 100%;
-	height:100vh;
+	height:150vh;
 	min-height: 650px;
 	font-family: 'Poppins', sans-serif;
 	background: url("images/noise.png");
@@ -168,7 +168,7 @@ button a {
 .our-products h1{
 	text-align: center;
 	color: #333;
-	padding-top: 50px;
+	padding-top: 150px;
 	padding-bottom: 50px;
 	font-size: 48px;
 	font-weight:lighter;
@@ -253,14 +253,105 @@ button a {
 /* end our products */
 
 
+/*start about page*/
+
+.about {
+	width:100%; height:1700px;
+	background: url("images/about1.jpg") center/cover no-repeat;
+	color: #fff;
+	position: relative;
+	font-family: 'Poppins', sans-serif;
+}
+
+.about .box1 {
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%; height: 50%;
+	background: url("images/about1.jpg") center/cover no-repeat;
+	transform: rotate(180deg);
+	z-index: 1;
+}
+
+.about .box2 {
+	position: absolute;
+	top: 50%; left: 0;
+	width: 100%; height: 50%;
+	background: url("images/about2.jpg") center/cover no-repeat;
+	transform: rotate(180deg);
+	z-index: 1;
+}
+
+.about .layer {
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgb(0,0,0, .8);
+	z-index: 2;
+}
+
+.about .header {
+	position: absolute;
+	top: 3%;
+	left: 0;
+	width: 100%;
+	z-index: 3;
+	padding: 50px;
+}
+
+.about .header h1 {
+	text-align: center;
+	font-family: 'Bangers', cursive;
+	font-size: 64px;
+	letter-spacing: 3px;
+	font-weight: lighter;
+	color: #fff;
+}
+
+.about .info-container {
+	width: 100%;
+	position: absolute;
+	bottom: 0; left: 0;
+	z-index: 4;
+}
+
+.about .info-container:before{
+	content: "";
+	position: absolute;
+	width: 5px;
+	height: 90%;
+	left: 25%;
+	background: #fff;
+}
+
+.about .info {
+	margin-top: 50px;
+	position: relative;
+	height: 300px;
+}
+
+.about .info h2 {
+	position: absolute;
+	left: 5%;
+	font-size: 36px;
+}
+
+.about .info p {
+	position: absolute;
+	left: 30%;
+	top: 15%;
+	font-size: 24px;
+}
+
+/*end about page*/
+
+
 footer {
 	background: #333;
-	color: #fff;
+	color: #d6d6d6;
 	height: auto;
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
-	flex-direction: column;
 	padding: 10px;
 }
 
