@@ -14,10 +14,10 @@
 			</div>
 			<div class="navbar">
 				<ul>
-					<li><a href="#home">HOME</a></li>
-					<li><a href="#products">PRODUCTS</a></li>
-					<li><a href="#about">ABOUT</a></li>
-					<li><a href="#">CONTACT</a></li>
+					<a href="#home"><li>HOME</li></a>
+					<a href="#products"><li>PRODUCTS</li></a>
+					<a href="#about"><li>ABOUT</li></a>
+					<a href="#contact"><li>CONTACT</li></a>
 				</ul>
 			</div>
 		</header>
@@ -100,10 +100,24 @@
 			</div>
 		</div>
 	</div>
+	<div class="contact">
+		<div id="contact" class="contact-container">
+			<h1> CONTACT US </h1>
+			<form action="https://formspree.io/meqrgadr" method="POST">
+				<input name="name" type="text" placeholder="your name" required />
+				<input type="text" name="_replyto" placeholder="your email" required>
+				<textarea name="message" rows="10" placeholder="your message" required></textarea>
+				<button type="submit">Send</button>
+			</form>
+		</div>
+	</div>
 	<footer>
 		<p>Copyright&copy; 2020</p>
 		<p>designed and coded by <a target="_blank" href="https://www.linkedin.com/in/mohamed-tarek-b2420118b/">Muhammad Tarek</a></p>
 	</footer>
-	<script type="text/javascript" src="main.js"/>
+	<a href="#home" class="up">
+		<i class="fas fa-arrow-up"></i>
+	</a>
+	<script type="text/javascript" src="main.js"></script>
 </body>
 </html>
