@@ -393,7 +393,8 @@ button a {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background: #00A6E2;
+	background: rgb(83,122,236);
+	background: linear-gradient(345deg, rgba(83,122,236,1) 25%, rgba(0,154,190,1) 100%, rgba(246,254,253,1) 100%);
 	padding: 100px;
 }
 
