@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
 	<link rel="shortcut icon" type="image/png" href="images/favicon.png">
 	<script src="https://kit.fontawesome.com/18ca1044aa.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -12,8 +13,11 @@
 			<div class="brand">
 				<h1>SHOE GO</h1>
 			</div>
+			<div class="menu-icon">
+				<i class="fas fa-bars"></i>
+			</div>
 			<div class="navbar">
-				<ul>
+				<ul class="ul-nav">
 					<a href="#home"><li>HOME</li></a>
 					<a href="#products"><li>PRODUCTS</li></a>
 					<a href="#about"><li>ABOUT</li></a>
@@ -22,19 +26,23 @@
 			</div>
 		</header>
 		<div class="product">
+			<div class="product-img"></div>
 			<div class="details">
 				<h3>RUNNING SHOES</h3>
 				<h1>SPECIAL EDITION</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet rhoncus metus. Morbi in porta purus. Donec eget vehicula eros.</p>
 				<button><a href="#">ORDER NOW</a></button>
 			</div>
-			<div class="product-img">
-				<img src="images/running-shoes.png" alt="shoe"/>
-			</div>
 		</div>
 	</div>
 	<div id="products" class="our-products">
 		<h1>OUR PRODUCTS</h1>
+		<div class="prod-nav arrow-left">
+			<i class="fas fa-arrow-left"></i>
+		</div>
+		<div class="prod-nav arrow-right">
+			<i class="fas fa-arrow-right"></i>
+		</div>
 		<div class="products">
 			<div class="product one">
 				<img src="images/one.jpg" alt="purple shoe" />
